@@ -215,7 +215,7 @@ let integerToDescribe = 5
     switch integerToDescribe {
     case 2,3,5,7,11,13,17,19:
         description += " a prime number and also"
-        //fallthrough
+        fallthrough
     default:
         description += "an integer."
     }
@@ -272,7 +272,7 @@ update1(age:-1)
 //let stillAnotherPoint2 = (1,5)
 //
 //switch stillAnotherPoint2 {
-//case (let distance, let distance1), (let distance1, let distance):
+//case let (distance, distance1), let(distance1, distance):
 //    print("\(distance)\(distance1)")
 //default:
 //    print("Not on an axis")
@@ -281,8 +281,18 @@ update1(age:-1)
 
 
 //- 문자열 두 개를 입력받아 두 문자열이 같은지 여부를 판단해주는 함수
-
-let Moonza2 = ("김", "민")
+func moonza2(input: String) -> Bool{
+    var bool: Bool = true
+    if input == input{
+        print(bool)
+    }else{
+        bool = false
+        print(bool)
+    }
+    return bool
+}
+moonza2(input:"김")
+moonza2(input:"민")
 
 //- 학점을 입력받아 각각의 등급을 반환해주는 함수 (4.5 = A+,  4.0 = A, 3.5 = B+ ...)
 
