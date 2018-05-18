@@ -296,8 +296,22 @@ moonza2(input:"민")
 
 //- 학점을 입력받아 각각의 등급을 반환해주는 함수 (4.5 = A+,  4.0 = A, 3.5 = B+ ...)
 
+let score = 61.2
+
+switch score {
+case 0.0...50.0:
+    print("A")
+case 51...100:
+    print("B")
+default:
+    print("Something else")
+}
+
 //- 여러 등급을 입력받아 그 학점의 평균을 반환해주는 함수
 
+//func avg(input: String) -> Double {
+//    let ap = "A+"
+//}
 //- 윤년 구하기 (2월 29일이 있는 해.  매 4년 마다 윤년. 매 100년 째에는 윤년이 아님. 매 400년 째에는 윤년)
 //- 세 수를 입력받아 세 수의 곱이 양수이면 true , 음수이면 false 반환하는 함수
 //- 특정한 달을 숫자로 입력 받아 문자로 반환해주는 함수 (1 = "Jan" , 2 = "Feb")
