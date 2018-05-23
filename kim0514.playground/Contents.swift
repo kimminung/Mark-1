@@ -217,7 +217,7 @@ func greetAgain(person: String)->String{
 }
 
 greetAgain(person:"Anna")
-
+greetAgain(person:"Brian")
 // (label name:Type) -> (ArgumentName ParameterName:Type)
 
 func someFunction(firstParameterName:Int, secondParameterName:Int){
@@ -241,7 +241,7 @@ someFunction(argumentLabel: 10)
 
 //
 func functionWithDefault(paramWithoutDefault: Int, paramWithDefault: Int=12)->Int{
-    return paramWithoutDefault
+    return paramWithDefault
 }
 
 
@@ -254,7 +254,9 @@ func arithmeticMean(_ numbers:Double...)-> Double{
     for number in numbers{
         total += number
     }
+    print(numbers)
     return total / Double(numbers.count)
+    
 }
 
 arithmeticMean(1,2,3,4,5)
@@ -304,7 +306,7 @@ func say(something:String) -> (){
 }
 
 say(number: 1)
-say(word: "1")
+say(word: "0")
 say(something: "1")
 
 
@@ -341,12 +343,12 @@ say(introduce: 25)
 //이름과 나이를 입력 받아 자신을 소개하는 글을 출력하는 함수
 func greet(name: String, age: Int) -> String {
     let greeting = "저의 이름은 \(name)이고 나이는 \(age)입니다."
+    print(greeting)
 //    let greeting = "저의 이름은" + name + "이고 나이는 " + String(age) + "입니다"
     //print(greeting)
     return greeting
 }
 greet(name:"minung", age:25) //
-
 
 
 //정수를 하나 입력받아 2의 배수 여부를 반환하는 함수
@@ -375,6 +377,18 @@ func multiplication(input1: Int, input2: Int) {
 multiplication(input1: 10,input2: 3)
 
 //4과목의 시험 점수를 입력 받아 평균 값을 반환해주는 함수
+
+func test(_ numbers:Double...)-> Double{
+    var total = 0.0
+    for number in numbers{
+        total += number
+    }
+    print(total / Double(numbers.count))
+    return total / Double(numbers.count)
+}
+
+test(3,8.25, 18.75, 28)
+
 //미완
 //func test(_ sub: String...,_ score: Double..., avg: Double)-> Double{
 ////    let result = "평균은 " \(avg) "점 입니다."
