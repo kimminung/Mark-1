@@ -25,3 +25,28 @@ func googoo(input: Int){
 }
     googoo(input: 3)
 //
+func gugudan() {
+    
+    var dan: Int = 2
+    var j: Int = 1
+    
+    while dan <= 9 {
+        while j <= 9 {
+            print("\(dan) X \(j) = \(dan*j)")
+            j += 1
+        }
+        
+        dan += 1
+    }
+}
+gugudan()
+func gugudan(num: Int) {
+    
+    let dan: Int = num
+    var j = 1
+    while j <= 9 {
+        print("\(dan) X \(j) = \(dan*j)")
+        j += 1
+    }
+}
+gugudan(num: 3)
