@@ -40,7 +40,9 @@ func getNum(num1 : Int, num2 : Int){
     guard num1>0,num2>0 else { print("입력값 : \(num1),\(num2)\n적어도 하나의 수가 자연수가 아닙니다\n"); return }
     for i in 1...checkNum{
         if(num1%i==0){
+            print(i)
             if(num2%i==0){
+                print(i)
                 gcdNum=i
             }
         }
