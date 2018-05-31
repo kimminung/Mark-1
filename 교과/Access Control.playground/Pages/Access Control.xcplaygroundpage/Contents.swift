@@ -22,7 +22,9 @@
  */
 // explicitly
 
-open class SomeOpenClass {}
+import Foundation
+
+open class SomeOpenClass {}         // 
 public class SomePublicClass {}
 internal class SomeInternalClass {}
 fileprivate class SomeFilePrivateClass {}
@@ -50,13 +52,20 @@ let implicitlyInternalConstant = 0
  ## Custom Types
  ---
  */
+open class SomeOpenClass1 {
+    open var kimMinUng = 1
+}
+
 public class SomePublicClass1 {                // explicitly public class
   public var somePublicProperty = 0            // explicitly public class member
   var someInternalProperty = 0                 // implicitly internal class member
   fileprivate func someFilePrivateMethod() {}  // explicitly file-private class member
   private func somePrivateMethod() {}          // explicitly private class member
 }
-
+let kim1 = SomeOpenClass1()
+kim1.kimMinUng
+//    let kim2 = SomePublicClass1()
+//    kim2.somePublicProperty
 class SomeInternalClass1 {                     // implicitly internal class
 //    public var somePublicProperty = 0 오류는 없지만 이런식으로 사용하면 안됨
   var someInternalProperty = 0                 // implicitly internal class member

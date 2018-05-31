@@ -1,14 +1,4 @@
 //: [Previous](@previous)
-/*:
- ---
- ## Access Levels
- * open
- * public
- * internal
- * fileprivate
- * private
- ---
- */
 
 
 /***************************************************
@@ -16,8 +6,8 @@
  ***************************************************/
 
 //둘 다 동일한 역할이지만 내용을 넣었을때 다른 결과가 발생함
-class SomeOpenClass {
-  open var name = "name"
+class SomeOpenClass {       //SomeOpenClass라는 클래스를 만들거다
+  open var name = "name"    //
   open var age = 0
 }
 
@@ -33,6 +23,7 @@ someOpenClass.age
 let somePublicClass = SomePublicClass()
 somePublicClass.name
 somePublicClass.age
+
 
 //: ---
 /***************************************************
