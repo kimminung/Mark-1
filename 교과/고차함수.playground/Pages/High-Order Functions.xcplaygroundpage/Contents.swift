@@ -151,6 +151,8 @@ let array: [[Int?]] = [[1, 2, 3], [nil, 5], [6, nil], [nil, nil]]
 print(array.flatMap { $0 }.compactMap { $0 })
 print(array.compactMap { $0 }.flatMap { $0 })
 
+[1,2,3].first
 
+[1,2,3].last
 
 //: [Next](@next)

@@ -4,8 +4,9 @@ import UIKit
 
 struct Pet {
     enum PetType {
+            case dog, cat, snake, pig, bird
     }
-    case dog, cat, snake, pig, bird
+
     var type: PetType
     var age: Int
 }
