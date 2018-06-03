@@ -205,6 +205,7 @@ false || false
 //  행렬 0,1,2,3 출력해보기
 //  반대로 출력 -> reverse, stride 두 가지 방법으로 거꾸로 출력 가능
 
+
 func greet(person: String) -> String{
     let greeting = "Hello"+person+"!"
     return greeting
