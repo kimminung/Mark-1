@@ -56,9 +56,10 @@ for str in list {
 	var answer = 1
 
 	for _ in 1...power {
-  answer *= base
-}
-print("\(base) to the power of \(power) is \(answer)")```
+  	answer *= base
+	}
+	print("\(base) to the power of \(power) is \(answer)")
+	```
 
 
 - for 문을 이용하여 10부터 1까지 내림차순으로 출력하는 코드 구현
