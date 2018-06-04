@@ -66,10 +66,10 @@ for str in list {
 
 	```
 	for num in (1...10).reversed() {
-  print(num, terminator: " ")
-}
-print()
-```
+  	print(num, terminator: " ")
+	}
+	print()
+	```
 
 --
 
